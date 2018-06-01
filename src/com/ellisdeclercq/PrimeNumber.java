@@ -2,20 +2,44 @@ package com.ellisdeclercq;
 
 public class PrimeNumber {
     public static void main(String[] args) {
-        int Testgetal = 18;
-        int Deelgetal = Testgetal;
-        int Count = 0;
-        while (Testgetal <= Deelgetal) {
-            Deelgetal--;
-            if (Deelgetal % Testgetal == 0) {
-                Count++;
+        /*int testgetal = 6;
+        int deelgetal = testgetal;
+        int count = 0;
+        while (deelgetal > 0) {
+
+            System.out.println("while loop"+deelgetal);
+            if (testgetal % deelgetal == 0) {
+                count++;
+                System.out.println("if loop"+count);
             }
+            deelgetal--;
+
         }
-        if (Count <= 2) {
+        if (count == 2) {
             System.out.println("Het is een priemgetal");
         } else {
             System.out.println("Het is geen priemgetal");
-        }
+        }*/
+        int n = 35;
+        int kandidaat = 2;
+        boolean isPriem = true;
+        while (kandidaat < n) {
+            int r = n % kandidaat;
+            if (r == 0) ;
+            {
+                isPriem = false;
+            }
+
+        kandidaat++;
+    }
+    if(isPriem) {
+
+
+        System.out.println("het is een priemgetal");
+    } else {
+        System.out.println("het is geen priemgetal");
+
+    }
     }
 }
 
