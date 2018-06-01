@@ -1,4 +1,4 @@
-package com.ellisdeclercq;
+package com.ellisdeclercq.mei;
 
 public class PrimeNumber {
     public static void main(String[] args) {

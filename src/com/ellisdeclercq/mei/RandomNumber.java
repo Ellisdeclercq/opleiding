@@ -1,6 +1,4 @@
-package com.ellisdeclercq;
-
-import java.util.Random;
+package com.ellisdeclercq.mei;
 
 public class RandomNumber {
 

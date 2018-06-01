@@ -1,4 +1,4 @@
-package com.ellisdeclercq;
+package com.ellisdeclercq.mei;
 
 import java.util.Scanner;
 
@@ -9,7 +9,7 @@ public class GuessingGame {
         int max = 10;
         int winnendGetal = RandomNumber.berekenRandomGetal(min, max);
 
-        System.out.println(winnendGetal);
+
         Scanner s = new Scanner(System.in);
 
         System.out.println("Geef een getal in tussen " + min + " en " + max);

@@ -1,4 +1,4 @@
-package com.ellisdeclercq;
+package com.ellisdeclercq.mei;
 
 public class Fibonacci {
     public static void main(String[] args) {
