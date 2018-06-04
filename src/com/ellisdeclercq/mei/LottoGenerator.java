@@ -1,27 +1,27 @@
 package com.ellisdeclercq.mei;
 
+import java.util.Arrays;
+
 public class LottoGenerator {
 
     public static void main(String[] args) {
 
-        int[] getallen = {0, 0, 0, 0, 0, 0};
+        /*int[] trekking = new int [6];
         int x = 0;
-        for (int z = 0; z < getallen.length ; z++) {
+        for (int z = 0; z < trekking.length ; z++) {
             x = RandomNumber.berekenRandomGetal(1,45);
-            getallen[z] = x;
+            trekking[z] = x;
         }
 
 
-
-
-
-
-
-
-        for (int p = 0; p <getallen.length; p++) {
-            System.out.println(getallen[p]);
+        System.out.println(x);
+        for (int p = 0; p <trekking.length; p++) {
+            trekking[p] = int art;
         }
+
+        Arrays.sort(x);*/
+
         //System.out.println(x);
-        //System.out.println(" " + getallen[0] + " " + getallen[1] + " " + getallen[2] + " " + getallen[3] + " " + getallen[4] + " " + getallen[5]);
+        //System.out.println(" " + trekking[0] + " " + trekking[1] + " " + trekking[2] + " " + trekking[3] + " " + trekking[4] + " " + trekking[5]);
     }
 }
