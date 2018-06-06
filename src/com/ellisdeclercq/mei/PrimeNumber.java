@@ -20,7 +20,7 @@ public class PrimeNumber {
         } else {
             System.out.println("Het is geen priemgetal");
         }*/
-        int n = 35;
+        int n = 13;
         int kandidaat = 2;
         boolean isPriem = true;
         while (kandidaat < n) {

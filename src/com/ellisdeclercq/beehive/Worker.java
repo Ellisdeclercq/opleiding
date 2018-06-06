@@ -18,12 +18,12 @@ public class Worker {
         public static void main(String[] args) {
 
 
-        public  void gatherNectar() { // elke bij heeft van de classe Worker heeft een gatherNectar mogelijkheid
+        // public  void gatherNectar() { // elke bij heeft van de classe Worker heeft een gatherNectar mogelijkheid
             for (int i = 0; i > 10; i++) {
-                System.out.println("Visit next flower" + load + capacity);// visit flower
-                load += 5;
+               // System.out.println("Visit next flower" + load + capacity);// visit flower
+                //load += 5;
             }
 
         }
     }
-}
+
