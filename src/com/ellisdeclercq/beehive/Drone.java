@@ -4,6 +4,7 @@ public class Drone {
 
     long load;
     int times;
+    long amount;
 
     public Drone ( long load, int times ) {
         System.out.println("create new drone");
@@ -13,8 +14,8 @@ public class Drone {
 
     public static void main(String[] args) {
         Drone Richard = new Drone(25000, 5);
-        long amount = Richard.load * Richard.times;
+        Richard.amount = Richard.load * Richard.times;
 
-        System.out.println(amount);
+        System.out.println(Richard.amount);
     }
 }

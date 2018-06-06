@@ -18,7 +18,7 @@ public class Queen {
         this.numberOfEggs = numberOfEggs;
     }
 
-    public void matingFlight (long amount)  // later iets verzinnen voor invloed amount
+    public void matingFlight (int amount)  // later iets verzinnen voor invloed amount
     {
         sperm = sperm + amount;
     }
