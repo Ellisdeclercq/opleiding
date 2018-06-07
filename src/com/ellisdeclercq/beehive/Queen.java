@@ -4,36 +4,31 @@ import com.ellisdeclercq.mei.RandomNumber;
 
 import java.util.Random;
 
-public class Queen {
+public class Queen extends Bee{
 
-    String name;
+
     int food;
     long sperm;
     long numberOfEggs;
 
-    public Queen (String herName, long numberOfEggs) {
-        name = herName;
+    public Queen (String name, long numberOfEggs) {
+        super(name);
         food = RandomNumber.berekenRandomGetal(20000,30000);
         sperm = 0;
         this.numberOfEggs = numberOfEggs;
     }
 
-    public void matingFlight (int amount)  // later iets verzinnen voor invloed amount
+    public void matingFlight (Drone inputObject)
     {
-        sperm = sperm + amount;
+        this.sperm = this.sperm + inputObject.amount;
+        System.out.println(this.sperm);
     }
 
 
     public static void main(String[] args) {
         Queen Elisabeth = new Queen("Elisabeth", 40000);
-        Elisabeth.matingFlight(12300);
         System.out.println(Elisabeth.sperm);
 
-        while(Elisabeth.sperm > 0 && Elisabeth.food > 0) {
-            Elisabeth.numberOfEggs = Elisabeth.numberOfEggs + 1;
-            Elisabeth.sperm = Elisabeth.sperm - 1;
-            Elisabeth.food = Elisabeth.food -1;
-        }
 
         System.out.println(Elisabeth.numberOfEggs);
 
@@ -43,5 +38,14 @@ public class Queen {
         int number = 1 + numberOfEggs;
 
         return number;
+    }
+
+    public void makeEgg(){
+    while(this.sperm > 0 && this.food > 0) {
+        this.numberOfEggs = this.numberOfEggs + 1;
+        this.sperm = this.sperm - 1;
+        this.food = this.food - 1;
+    }
+
     }
 }

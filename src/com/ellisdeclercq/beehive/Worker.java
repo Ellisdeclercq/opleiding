@@ -21,7 +21,7 @@ public class Worker {
         // public  void gatherNectar() { // elke bij heeft van de classe Worker heeft een gatherNectar mogelijkheid
             for (int i = 0; i > 10; i++) {
                // System.out.println("Visit next flower" + load + capacity);// visit flower
-                //load += 5;
+                // load += 5;
             }
 
         }
