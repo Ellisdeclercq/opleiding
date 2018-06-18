@@ -2,7 +2,7 @@ package com.ellisdeclercq.mei;
 
 public class PrimeNumber {
     public static void main(String[] args) {
-        /*int testgetal = 6;
+        int testgetal = 6;
         int deelgetal = testgetal;
         int count = 0;
         while (deelgetal > 0) {
@@ -19,7 +19,11 @@ public class PrimeNumber {
             System.out.println("Het is een priemgetal");
         } else {
             System.out.println("Het is geen priemgetal");
-        }*/
+        }
+
+
+
+        /*
         int n = 13;
         int kandidaat = 2;
         boolean isPriem = true;
@@ -40,6 +44,8 @@ public class PrimeNumber {
         System.out.println("het is geen priemgetal");
 
     }
+
+    */
     }
 }
 
