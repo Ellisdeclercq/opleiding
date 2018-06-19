@@ -26,8 +26,8 @@ public class BreukTest {
 
         Breuk e = c.plus(d);
 
-        assertEquals(e.getTeller(), 105);
-        assertEquals(e.getNoemer(), 50);
+        assertEquals(e.getTeller(), 21);
+        assertEquals(e.getNoemer(), 10);
 
     }
 
@@ -38,8 +38,8 @@ public class BreukTest {
 
         Breuk c = a.min(b);
 
-        assertEquals(c.getTeller(), -2);
-        assertEquals(c.getNoemer(), 8);
+        assertEquals(c.getTeller(), -1);
+        assertEquals(c.getNoemer(), 4);
 
     }
 
@@ -50,8 +50,8 @@ public class BreukTest {
 
         Breuk c = a.min(b);
 
-        assertEquals(c.getTeller(), 2);
-        assertEquals(c.getNoemer(), 8);
+        assertEquals(c.getTeller(), 1);
+        assertEquals(c.getNoemer(), 4);
 
     }
 
@@ -63,18 +63,18 @@ public class BreukTest {
 
         Breuk c = a.maal(b);
 
-        assertEquals(c.getTeller(), 12);
-        assertEquals(c.getNoemer(), 72);
+        assertEquals(c.getTeller(), 1);
+        assertEquals(c.getNoemer(), 6);
     }
 
     @Test
     public void breukOmkeren () {
-        Breuk a = new Breuk (5, 8);
+        Breuk a = new Breuk (10, 5);
 
         Breuk b = a.omkering();
 
-        assertEquals(b.getTeller(), 8);
-        assertEquals(b.getNoemer(), 5);
+        assertEquals(b.getTeller(), 1);
+        assertEquals(b.getNoemer(), 2);
     }
 
     @Test
@@ -84,13 +84,14 @@ public class BreukTest {
 
         Breuk c = a.deel(b);
 
-        assertEquals(c.getTeller(),8);
-        assertEquals(c.getNoemer(), 4);
-
+        assertEquals(2, c.getTeller());
+        assertEquals(1, c.getNoemer());
     }
 
-
-
+    @Test(expected = IllegalArgumentException.class)
+    public void deNoemerMagNietNulZijn() {
+        Breuk a = new Breuk (1,0);
+    }
 
 }
 
